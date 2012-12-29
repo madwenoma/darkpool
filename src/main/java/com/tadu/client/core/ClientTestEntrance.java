@@ -38,7 +38,7 @@ public class ClientTestEntrance {
 	
 	private static void execute(){
 		Scanner sc = new Scanner(System.in);
-		out.println("请输入服务器IP和端口(如'192.168.1.16:8080'):");
+		out.println("请输入服务器IP和端口(如'192.168.1.16:8080或192.168.1.16:8080/restServiceName'):");
 		String serverURL = sc.nextLine();
 		serverURL = "http://" + serverURL; // http://13.134.1.33:8080/
 		while(true){ 
@@ -116,17 +116,17 @@ public class ClientTestEntrance {
 		out.println();
 		out.println("******************************使用说明*******************************");
 		out.println();
-		out.println("  本脚本用于测试ZET ZXIS-RSP系列REST接口.");
-		out.println("  REST接口基于HTTP协议,请求方式通常分为 Get和Post.");
-		out.println("  在测试接口时，需要指定接口请求方式.");
-		out.println("  1.请求URI,形如/rest/read/、rest/read/、rest/read、/rest/read均可.");
-		out.println("  2.请求参数：");
-		out.println("      1.Get请求参数，  请使用标准key1 value1,key2 value2格式.");
-		out.println("          或直接输入参数长串如:'userid=001&clientid=445'");
-		out.println("      2.Post请求参数，请使用标准格式.");
-		out.println("      3.分隔符不可出现在开头和结尾，且不可连续出现两次及以上.");
-		out.println("  3.程序会记录成功的测试日志和异常日志，位于程序当前目录下.");
-		out.println("  4.程序功能未经严格测试，如有问题，请及时反馈，谢谢.");
+		out.println("*  本脚本用于测试ZET ZXIS-RSP系列REST接口.");
+		out.println("*  REST接口基于HTTP协议,请求方式通常分为 Get和Post.");
+		out.println("*  在测试接口时，需要指定接口请求方式.");
+		out.println("*  1.请求URI,形如/rest/read/、rest/read/、rest/read、/rest/read均可.");
+		out.println("*  2.请求参数：");
+		out.println("*      1.Get请求参数，  请使用标准key1 value1,key2 value2格式.");
+		out.println("*          或直接输入参数长串如:'userid=001&clientid=445'");
+		out.println("*      2.Post请求参数，请使用标准格式.");
+		out.println("*      3.分隔符不可出现在开头和结尾，且不可连续出现两次及以上.");
+		out.println("*  3.程序会记录成功的测试日志和异常日志，位于程序当前目录下.");
+		out.println("*  4.程序功能未经严格测试，如有问题，请及时反馈，谢谢.");
 		out.println();
 		out.println("*********************************************************************");
 		out.println();
